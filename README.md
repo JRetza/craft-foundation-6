@@ -19,14 +19,20 @@ You can `$ npm install --global foundation-cli` and then use this repository in 
 
 **Note**: this is simply a jumping off point for those looking to work with Foundation in Craft. there are hundreds of ways to do this, if you have an idea - please feel free to add to or correct this repo.   
 
-##### Setup:  
+#### Setup:  
+#####Step 1.
+
     git clone https://github.com/fndaily/craft-foundation-6 your_project_dir
     cd your_project_dir
     bower install
     npm install
     cp bower_components/foundation-sites/scss/settings/_settings.scss src/scss/_settings.scss
 
-Lastly, update "http://YOURDOMAIN.dev" in `gulfile.babel.js`
+#####Step 2.
+    Grab a copy of Craft CMS and replace the /craft/ directory with your newly downloaded copy.
+
+#####Step 3.
+    Optionally, update "http://YOURDOMAIN.dev" in `gulfile.babel.js`
 
 ********************
 
