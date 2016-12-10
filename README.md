@@ -40,7 +40,7 @@ You can `$ npm install --global foundation-cli` and then use this starter kit or
     - `/jquery`
     - `/motion-ui`
     - `/what-input`
-- `/craft/` - where you put your craftcms installation    
+- `/craft/` - where you put your [craftcms](http://craftcms.com/) installation    
 - `/node_modules/` - where node gets installed when running `$npm install`
 - `/site/` - where you point apache
     - `/lib` - compiled when you run `foundation watch` or `foundation build`
