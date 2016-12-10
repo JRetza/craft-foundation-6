@@ -45,8 +45,8 @@ You can `$ npm install --global foundation-cli` and then use this starter kit or
 - `/site/` - where you point apache
     - `/lib` - compiled when you run `foundation watch` or `foundation build`
 - `/src`
-    - `/fonts`
-    - `/gr`
+    - `/fonts` - fonts here
+    - `/gr` - put your graphics here and auto-compress them on build
     - `/js`
         - `/app.js` - adds $(document).foundation(); at the end of your compiled js
     - `/scss` - source foundation 6 sass files
