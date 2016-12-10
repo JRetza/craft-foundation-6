@@ -62,8 +62,8 @@ You can `$ npm install --global foundation-cli` and then use this starter kit or
         - `/_settings.scss` - a copy of the default Foundation config
         - `/app.scss` - included foundation dependencies
     - `/svg` - source svg files
-- `/bower.json` - build configuration for your `/bower_components/`
-- `/config.yml` - central config file to manage your build paths and foundation components
+- `/bower.json` - module configuration for your `/bower_components/`
+- `/config.yml` - central config file to manage your paths and foundation components
 - `/gulpfile.babel.js` - where it all comes together - update according to your needs
-- `/package.json` - build configuration for your `/node_modules/`
+- `/package.json` - module configuration for your `/node_modules/`
 - `/README.md` - this file =)
