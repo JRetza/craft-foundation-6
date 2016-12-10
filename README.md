@@ -52,8 +52,8 @@ You can `$ npm install --global foundation-cli` and then use this starter kit or
     - `/scss` - source foundation 6 sass files
         - `/components` - your custom sass/css goes inside here
         - `/mixins` - your custom mixins go inside here
-        - `/_settings.scss`  
-        - `/app.scss`
+        - `/_settings.scss` - a copy of the default Foundation config
+        - `/app.scss` - included foundation dependencies
     - `/svg`
 - `/bower.json` - build configuration for your `/bower_components/`
 - `/config.yml` - central config file to manage your build paths and foundation components
