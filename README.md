@@ -38,9 +38,8 @@ Lastly, update "http://YOURDOMAIN.dev" in `gulfile.babel.js`
     - `/motion-ui`
     - `/what-input`
 - `/craft/` - where you put your craftcms installation    
-
-
-- `/lib` - compiled when you run `foundation watch` or `foundation build`
+- `/site/` - where you point apache
+    - `/lib` - compiled when you run `foundation watch` or `foundation build`
 - `/src`
     - `/fonts`
     - `/gr`
@@ -52,14 +51,6 @@ Lastly, update "http://YOURDOMAIN.dev" in `gulfile.babel.js`
         - `/_settings.scss`  
         - `/app.scss`
     - `/svg`
-- `/templates` - expressionengine site templates
-    - `/core.group`
-        - `/index.html` - example index.html for testing foundation
-    - `/design.group`
-        - `/display.css` - the compiled css after you've run `watch` or `build`
-    - `/framework.group`
-        - `/.base-wrapper.html` - acts as a wrapper to the core/index.html and provides a simple place to keep all css, js & browser-sync injections separate from your individual templates
-
 - `/bower.json` - build configuration for your `/bower_components/`
 - `/config.yml` - central config file to manage your build paths and foundation modules
 - `/gulpfile.babel.js` - where it all comes together - update according to your needs
