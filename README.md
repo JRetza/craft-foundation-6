@@ -29,7 +29,7 @@ You can `$ npm install --global foundation-cli` and then use this starter kit or
     Grab a copy of Craft CMS and replace the /craft/ directory with your newly downloaded copy.
 
 #####Step 3.
-    Optionally, update "http://YOURDOMAIN.dev" in `gulpfile.babel.js`
+    Optionally, update "http://YOURDOMAIN.dev" in `gulpfile.babel.js` line 97
 
 ********************
 
@@ -40,7 +40,7 @@ You can `$ npm install --global foundation-cli` and then use this starter kit or
     - `/jquery`
     - `/motion-ui`
     - `/what-input`
-- `/craft/` - where you put your [craftcms](http://craftcms.com/) installation    
+- `/craft/` - where you put your [craftcms](http://craftcms.com/) installation (step 2 above)   
 - `/node_modules/` - where node gets installed when running `$npm install`
 - `/site/` - where you point apache
     - `/lib` - compiled when you run `foundation watch` or `foundation build`
