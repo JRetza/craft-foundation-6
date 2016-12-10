@@ -1,7 +1,3 @@
-1. Replace the empty /craft/ directory with your craft install
-2. Optionally configure apache/etc to point to your /site/ directory
-
-
 ## Craft Foundation 6 Sass/Gulp Starter Config
 #### Configuration starter kit for Sassy  [Foundation 6](http://foundation.zurb.com/sites/docs/) with [CraftCMS](http://craftcms.com/) 2 OR 3  
 
@@ -10,14 +6,14 @@ With this simple configuration you will be able to
 - save hours of time in your front-end development
 - get live previews in the browser while developing without ever hitting reload (browser-sync)
 
-You can get Foundation 6 a plethora of ways, we use the foundation-cli as a dependency because it plays well with the new es2015 transforms and babel.
+You can get Foundation 6 a plethora of ways, we'll use the foundation-cli for this.
 
-You can `$ npm install --global foundation-cli` and then use this repository in your vhost dir or you can grab/setup Foundation 6 one of the many other ways and copy over the `_settings.scss` file into your `/src/` yourself.
+You can `$ npm install --global foundation-cli` and then use this starter kit or you can grab/setup Foundation 6 one of the many other ways and copy over the `_settings.scss` file into your `/src/` directory yourself.
 
 [Foundation Cli Installation Guide](http://foundation.zurb.com/sites/docs/installation.html)  
 [foundation-sites on github](https://github.com/zurb/foundation-sites)  
 
-**Note**: this is simply a jumping off point for those looking to work with Foundation in Craft. there are hundreds of ways to do this, if you have an idea - please feel free to add to or correct this repo.   
+**Note**: this is simply a jumping off point for those looking to work with Foundation in Craft. there are endless ways to do this, if you have an idea - please feel free to add to or correct this repo.   
 
 #### Setup:  
 #####Step 1.
@@ -32,7 +28,7 @@ You can `$ npm install --global foundation-cli` and then use this repository in 
     Grab a copy of Craft CMS and replace the /craft/ directory with your newly downloaded copy.
 
 #####Step 3.
-    Optionally, update "http://YOURDOMAIN.dev" in `gulfile.babel.js`
+    Optionally, update "http://YOURDOMAIN.dev" in `gulpfile.babel.js`
 
 ********************
 
