@@ -1,4 +1,4 @@
-## Craft Foundation 6 Sass/Gulp Starter Config
+## Craft Foundation 6 Sass/Gulp Starter Kit
 #### Configuration starter kit for Sassy  [Foundation 6](http://foundation.zurb.com/sites/docs/) with [CraftCMS](http://craftcms.com/) 2 OR 3  
 
 With this simple configuration you will be able to
@@ -16,8 +16,9 @@ You can `$ npm install --global foundation-cli` and then use this starter kit or
 **Note**: this is simply a jumping off point for those looking to work with Foundation in Craft. there are endless ways to do this, if you have an idea - please feel free to add to or correct this repo.   
 
 #### Setup:  
-#####Step 1.
+********************
 
+#####Step 1.
     git clone https://github.com/fndaily/craft-foundation-6 your_project_dir
     cd your_project_dir
     bower install
@@ -34,12 +35,13 @@ You can `$ npm install --global foundation-cli` and then use this starter kit or
 
 **Directory Structure**:
 
-- `/bower_components`
+- `/bower_components` - where bower gets installed when running `$bower install`
     - `/foundation-sites`
     - `/jquery`
     - `/motion-ui`
     - `/what-input`
 - `/craft/` - where you put your craftcms installation    
+- `/node_modules/` - where node gets installed when running `$npm install`
 - `/site/` - where you point apache
     - `/lib` - compiled when you run `foundation watch` or `foundation build`
 - `/src`
