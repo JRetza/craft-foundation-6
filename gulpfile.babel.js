@@ -108,7 +108,7 @@ function server(done) {
 function watch() {
   gulp.watch(PATHS.src, copy);
   // watch your ee templates directory i.e /templates/
-  gulp.watch('./templates/**/*.html').on('change',gulp.series(sass, browser.reload));
+  gulp.watch('./craft/templates/**/*.html').on('change',gulp.series(sass, browser.reload));
   gulp.watch('src/scss/**/*.scss').on('change',gulp.series(sass, browser.reload));
   gulp.watch('src/js/**/*.js').on('change',gulp.series(javascript, browser.reload));
   gulp.watch('src/img/**/*').on('change',gulp.series(images, browser.reload));
