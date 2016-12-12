@@ -6,13 +6,13 @@ With this simple configuration you will be able to
 - save hours of time in front-end development
 - get live previews in the browser while developing without ever hitting reload (browser-sync)
 
-You can get Foundation 6 a plethora of ways, we'll use the foundation-cli for this.
+You can get Foundation 6 a plethora of ways, we'll use the [foundation-cli](http://foundation.zurb.com/sites/docs/installation.html) for this.
 
-You can `$ npm install --global foundation-cli` and then use this starter kit 
+You can `$ npm install --global foundation-cli` then `$ foundation new` and use this starter kit in your newly initialized dir
 
 or  
 
-You can grab/setup Foundation 6 one of the many [other ways](http://foundation.zurb.com/sites/docs/installation.html) and copy over the `_settings.scss` file into your `/src/` directory yourself.
+You can grab/setup Foundation 6 one of the many [other ways](http://foundation.zurb.com/sites/docs/installation.html#manual-setup) and copy over the `_settings.scss` file into your `/src/` directory yourself.
 
 **Foundation Install Docs**:
 [Foundation Installation Guide](http://foundation.zurb.com/sites/docs/installation.html)  
