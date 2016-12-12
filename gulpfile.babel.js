@@ -44,10 +44,11 @@ function copy() {
 
 // compile sass into css
 function sass() {
+  // load up your CSS/SASS customizations
   return gulp.src('src/scss/app.scss')
     .pipe($.sourcemaps.init())
     .pipe($.sass({
-      includePaths: PATHS.sass
+      includePaths: PATHS.sass // (see config.yml)
     })
       .on('error', $.sass.logError))
     .pipe($.autoprefixer({
@@ -55,17 +56,20 @@ function sass() {
     }))
     // put everything nicely into one file
     .pipe($.concat('display.css'))
-    // with the --production flag, the css is cleaned and then compressed
+    // with the --production flag, the css is cleaned 
     .pipe($.if(PRODUCTION, $.uncss(UNCSS_OPTIONS)))
+    // then compressed && stripped of all comments
     .pipe($.if(PRODUCTION, $.cssnano({discardComments: {removeAll: true}})))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
-    // output destination - directly into ee /site/lib/display.css
+    // output destination - directly into /site/lib/display.css
     .pipe(gulp.dest(PATHS.dist + '/css'))
+    // lastly reload the browser
     .pipe(browser.reload({ stream: true }));
 }
 
 // combine javascript into one file
 function javascript() {
+  // get all the foundation javascript libraries && anything custom (see config.yml)
   return gulp.src(PATHS.javascript)
     .pipe($.sourcemaps.init())
     .pipe($.babel())
@@ -107,7 +111,7 @@ function server(done) {
 // watch for changes to static files, templates, sass, and javascript
 function watch() {
   gulp.watch(PATHS.src, copy);
-  // watch your ee templates directory i.e /templates/
+  // watch your craft templates directory i.e /templates/
   gulp.watch('./craft/templates/**/*.html').on('change',gulp.series(sass, browser.reload));
   gulp.watch('src/scss/**/*.scss').on('change',gulp.series(sass, browser.reload));
   gulp.watch('src/js/**/*.js').on('change',gulp.series(javascript, browser.reload));
