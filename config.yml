@@ -30,7 +30,6 @@ PATHS:
   sass:
     - "bower_components/foundation-sites/scss"
     - "bower_components/motion-ui/src"
-    # - "bower_components/normalize.scss/sass"
     - "src/scss"
 
 # paths to js libs, which are compiled into one file
