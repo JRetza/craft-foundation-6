@@ -33,7 +33,7 @@ You can grab/setup Foundation 6 one of the many other ways and copy over the `_s
     Grab a copy of Craft CMS and replace the /craft/ directory with your newly downloaded copy.
 
 #####Step 3.
-    Optionally, update "http://YOURDOMAIN.dev" in `gulpfile.babel.js` line 97
+    Update "http://YOURDOMAIN.dev" in `gulpfile.babel.js` line 97
 
 ********************
 
