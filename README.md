@@ -12,11 +12,11 @@ You can `$ npm install --global foundation-cli` and then use this starter kit
 
 or  
 
-You can grab/setup Foundation 6 one of the many other ways and copy over the `_settings.scss` file into your `/src/` directory yourself.
+You can grab/setup Foundation 6 one of the many [other ways](http://foundation.zurb.com/sites/docs/installation.html) and copy over the `_settings.scss` file into your `/src/` directory yourself.
 
 **Foundation Install Docs**:
-[Foundation Cli Installation Guide](http://foundation.zurb.com/sites/docs/installation.html)  
-[foundation-sites on github](https://github.com/zurb/foundation-sites)  
+[Foundation Installation Guide](http://foundation.zurb.com/sites/docs/installation.html)  
+[Zurb/Foundation on Github](https://github.com/zurb/foundation-sites)  
 
 **Note**: this is simply a jumping off point for those looking to work with Foundation in their Craft build. there are endless ways to do this, if you have an idea - please feel free to add to or correct this repo, and hey, thank you.
 
