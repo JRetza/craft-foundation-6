@@ -36,7 +36,7 @@ You can grab/setup Foundation 6 one of the many other ways and copy over the `_s
 
 ********************
 
-##Directory Structure##:
+##Directory Structure:
 
 - `/bower_components` - where bower gets installed when running `$bower install`
     - `/foundation-sites`
