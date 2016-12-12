@@ -2,8 +2,8 @@
 #### Configuration starter kit for Sassy  [Foundation 6](http://foundation.zurb.com/sites/docs/) with [CraftCMS](http://craftcms.com/) 2 OR 3  
 
 With this simple configuration you will be able to
-- add Foundation 6 to your Craft site
-- save hours of time in your front-end development
+- add the latest greatest Foundation 6 to your Craft site
+- save hours of time in front-end development
 - get live previews in the browser while developing without ever hitting reload (browser-sync)
 
 You can get Foundation 6 a plethora of ways, we'll use the foundation-cli for this.
