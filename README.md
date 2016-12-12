@@ -9,7 +9,9 @@ With this simple configuration you will be able to
 You can get Foundation 6 a plethora of ways, we'll use the foundation-cli for this.
 
 You can `$ npm install --global foundation-cli` and then use this starter kit 
-- or - 
+
+or  
+
 You can grab/setup Foundation 6 one of the many other ways and copy over the `_settings.scss` file into your `/src/` directory yourself.
 
 **Foundation Install Docs**:
