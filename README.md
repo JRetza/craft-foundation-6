@@ -18,8 +18,9 @@ You can grab/setup Foundation 6 one of the many other ways and copy over the `_s
 
 **Note**: this is simply a jumping off point for those looking to work with Foundation in their Craft build. there are endless ways to do this, if you have an idea - please feel free to add to or correct this repo, and hey, thank you.
 
-#### Setup:  
 ********************
+
+## Setup:  
 
 #####Step 1.
     git clone https://github.com/fndaily/craft-foundation-6 your_project_dir
