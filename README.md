@@ -15,6 +15,7 @@ or
 You can grab/setup Foundation 6 one of the many [other ways](http://foundation.zurb.com/sites/docs/installation.html#manual-setup) and copy over the `_settings.scss` file into your `/src/` directory yourself.
 
 **Foundation Install Docs**:
+
 [Foundation Installation Guide](http://foundation.zurb.com/sites/docs/installation.html)  
 [Zurb/Foundation on Github](https://github.com/zurb/foundation-sites)  
 
