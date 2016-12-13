@@ -96,16 +96,21 @@ function images() {
 
 // startup browser-sync - edit YOURDOMAIN below
 function server(done) {
-  browser.init({
-      proxy: {
-              target: "http://YOURDOMAIN.dev",
-              middleware: function (req, res, next) {
-                  console.log(req.url);
-                  next();
-              }
-          }
-  });
-  done();
+    browser.init({
+        notify: false,
+        port: 3000,
+        proxy: {
+            target: "http://YOURDOMAIN.dev",
+            middleware: function (req, res, next) {
+                console.log(req.url);
+                next();
+            }
+        },
+        ui: {
+            port: 3001
+        }
+    });
+    done();
 }
 
 // watch for changes to static files, templates, sass, and javascript
