@@ -72,7 +72,7 @@ function javascript() {
   // get all the foundation javascript libraries && anything custom (see config.yml)
   return gulp.src(PATHS.javascript)
     .pipe($.sourcemaps.init())
-    .pipe($.babel())
+    .pipe($.babel({ignore: ['what-input.js']}))
     .pipe($.concat('app.js'))
     // with the --production flag, the file is minified
     .pipe($.if(PRODUCTION, $.uglify()
