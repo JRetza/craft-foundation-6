@@ -1,12 +1,12 @@
-## Craft Foundation 6 Sass/Gulp Starter Kit
-#### Configuration starter kit for Sassy  [Foundation 6](http://foundation.zurb.com/sites/docs/) with [CraftCMS](http://craftcms.com/) 2 OR 3  
+## Craft Foundation 6.4.3 Sass/Gulp Starter Kit
+#### Configuration starter kit for Sassy  [Foundation 6.4.3](http://foundation.zurb.com/sites/docs/) with [CraftCMS](http://craftcms.com/) 2 OR 3  
 
 With this simple configuration you will be able to
-- add the latest greatest Foundation 6 to your Craft site
+- add the latest greatest Foundation 6.4 to your Craft site
 - save hours of time in front-end development
 - get live previews in the browser while developing without ever hitting reload (browser-sync)
 
-You can get Foundation 6 a plethora of ways, we'll use the [foundation-cli](http://foundation.zurb.com/sites/docs/installation.html) for this.
+You can get Foundation 6.4 a plethora of ways, we'll use the [foundation-cli](http://foundation.zurb.com/sites/docs/installation.html) for this.
 
 You can `$ npm install --global foundation-cli` then `$ foundation new` and use this starter kit in your newly initialized dir
 
@@ -25,28 +25,22 @@ You can grab/setup Foundation 6 one of the many [other ways](http://foundation.z
 
 ## Setup:  
 
-#####Step 1.
+##### Step 1.
     git clone https://github.com/fndaily/craft-foundation-6 your_project_dir
     cd your_project_dir
-    bower install
     npm install
-    cp bower_components/foundation-sites/scss/settings/_settings.scss src/scss/_settings.scss
+    cp node_modules/foundation-sites/scss/settings/_settings.scss src/scss/_settings.scss
 
-#####Step 2.
+##### Step 2.
     Grab a copy of Craft CMS and replace the /craft/ directory with your newly downloaded copy.
 
-#####Step 3.
-    Update "http://YOURDOMAIN.dev" in `gulpfile.babel.js` line 97
+##### Step 3.
+    Update "http://YOURDOMAIN.dev" in `gulpfile.babel.js` line 135
 
 ********************
 
 ##Directory Structure:
 
-- `/bower_components` - where bower gets installed when running `$bower install`
-    - `/foundation-sites`
-    - `/jquery`
-    - `/motion-ui`
-    - `/what-input`
 - `/craft/` - where you put your [craftcms](http://craftcms.com/) installation (step 2 above)   
 - `/node_modules/` - where node gets installed when running `$npm install`
 - `/site/` - where you point apache
@@ -69,7 +63,6 @@ You can grab/setup Foundation 6 one of the many [other ways](http://foundation.z
         - `/_settings.scss` - a copy of the default Foundation config
         - `/app.scss` - included foundation dependencies
     - `/svg` - source svg files
-- `/bower.json` - module configuration for your `/bower_components/`
 - `/config.yml` - central config file to manage your paths and foundation components
 - `/gulpfile.babel.js` - where it all comes together - update according to your needs
 - `/package.json` - module configuration for your `/node_modules/`
@@ -94,13 +87,3 @@ see what's outdated within `/your_project_dir/`:
 update npm packages within your_project_dir and record the new version references in your `package.json`:
 
     $ npm update --save
-
-#### Updating your project /bower_components/ (your main source for Foundation 6.2-> etc)
-
-update bower globally:
-
-    $ sudo npm install -g bower-update-all
-
-update `/bower_components/` within `/your_project_dir/`:
-
-    $ bower-update-all
